@@ -1,0 +1,31 @@
+/* HEADER */
+.header {
+    padding: .5rem 3rem;
+    width: 100%;
+    position: fixed;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
+#header-argentina-programa {
+    width: 29px;
+    height: 23px;
+    margin-top: 0.5rem;
+}
+
+#yo-programo {
+    display: flex;
+    gap: .5rem;
+    transition: .01s;
+    color: var(--title-color);
+    font-weight: var(--medium-font);
+}
+
+#yo-programo div {
+    text-align: center;
+}
+
+#yo-programo:hover {
+    color: var(--first-color);
+    filter: drop-shadow(0 0 0.5rem var(--first-color-light));
+}
