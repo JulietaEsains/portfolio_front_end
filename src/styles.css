@@ -58,7 +58,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    transition: .5s;
+    transition: .1s
 }
 
 body {
@@ -67,6 +67,15 @@ body {
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
+}
+
+.main {
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    color: var(--title-color);
+    font-weight: var(--semi-bold-font);
 }
 
 a {
@@ -78,11 +87,30 @@ img {
     height: auto;
 }
 
+/* CLASES CSS REUTILIZABLES */
+.section {
+    padding: 6rem 0 2rem;
+}
+
+.section-title, .section-subtitle {
+    text-align: center;
+}
+
+.section-title {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--bm-3);
+}
+
+.section-subtitle {
+    font-size: var(--small-font-size);
+    display: block;
+}
+
 /* DISPOSICIÓN */
 .container {
     max-width: 768px;
-    margin-left: var(--bm-1-5);
-    margin-right: var(--bm-1-5);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .grid {
