@@ -1,0 +1,21 @@
+.aboutMe__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    align-items: center;
+}
+
+.aboutMe__img {
+    width: 350px;
+    justify-self: center;
+    align-self: center;
+}
+
+.aboutMe__description {
+    text-align: justify;
+    margin-bottom: var(--bm-2-5);
+}
+
+.aboutMe__btn {
+    display: flex;
+    justify-content: center;
+}

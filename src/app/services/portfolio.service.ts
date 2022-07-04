@@ -14,4 +14,8 @@ export class PortfolioService {
   getHomeData(): Observable<any> {
     return this.http.get('../assets/data/home.json')
   }
+
+  getAboutMeData(): Observable<any> {
+    return this.http.get('../assets/data/about-me.json')
+  }
 }

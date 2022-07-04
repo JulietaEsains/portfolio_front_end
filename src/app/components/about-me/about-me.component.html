@@ -1,0 +1,25 @@
+<section class="aboutMe section" id="about-me">
+    <h2 class="section__title">Acerca de mí</h2>
+    <div class="aboutMe__container container grid">
+        <img 
+            [src]="aboutMeData.pictureSrc" 
+            alt="Julieta Esains Picture" 
+            class="aboutMe__img"
+        >
+        <div class="aboutMe__data">
+            <p class="aboutMe__description">
+                {{aboutMeData.description}}
+            </p>
+            <div class="aboutMe__btn">
+                <a 
+                    download=""
+                    [href]="aboutMeData.cv" 
+                    class="btn btn-flex"
+                >
+                    Descargar CV
+                    <i class="uil uil-download-alt btn-icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
