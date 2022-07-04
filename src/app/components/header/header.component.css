@@ -1,12 +1,13 @@
-/* HEADER */
 .header {
     padding: .5rem 3rem;
     width: 100%;
     position: fixed;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
 }
 
+/* LOGO ARGENTINA PROGRAMA */
 #header-argentina-programa {
     width: 29px;
     height: 23px;
@@ -28,4 +29,17 @@
 #yo-programo:hover {
     color: var(--first-color);
     filter: drop-shadow(0 0 0.5rem var(--first-color-light));
+}
+
+.nav {
+    max-width: 968px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
