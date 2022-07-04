@@ -14,4 +14,15 @@ export class HeaderItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  goToSection(sectionToGo: Section) {
+    // Pongo todas las secciones como inactivas excepto aquella a la que quiero acceder
+    for (let section of SECTIONS) {
+      if (section === sectionToGo) {
+        section.active = true
+      } else {
+        section.active = false
+      }
+    }
+  }
+
 }
