@@ -63,7 +63,7 @@
 }
 
 body {
-    margin: 0 0 var(--header-height) 0;
+    margin: 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
@@ -119,7 +119,7 @@ textarea {
 
 /* CLASES CSS REUTILIZABLES */
 .section {
-    padding: 6rem 0 2rem;
+    padding: 4.5rem 0 2rem;
 }
 
 .section__title {

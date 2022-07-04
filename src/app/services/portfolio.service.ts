@@ -22,4 +22,8 @@ export class PortfolioService {
   getContactData(): Observable<any> {
     return this.http.get('../assets/data/contact.json')
   }
+
+  getFooterData(): Observable<any> {
+    return this.http.get('../assets/data/footer.json')
+  }
 }
