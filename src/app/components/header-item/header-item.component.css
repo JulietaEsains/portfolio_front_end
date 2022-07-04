@@ -1,0 +1,13 @@
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--medium-font);
+    transition: 0.000001s;
+}
+
+.nav__link:hover {
+    color: var(--first-color);
+}
