@@ -14,9 +14,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.portfolioService.getHomeData().subscribe(data => {
-      this.homeData = data
-    })
+    this.portfolioService.getHomeData().subscribe(data => this.homeData = data)
   }
 
 }
