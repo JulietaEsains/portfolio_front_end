@@ -9,5 +9,5 @@
 }
 
 .nav__link:hover {
-    color: var(--first-color);
+    color: var(--first-color) !important;
 }
