@@ -18,4 +18,8 @@ export class PortfolioService {
   getAboutMeData(): Observable<any> {
     return this.http.get('../assets/data/about-me.json')
   }
+
+  getContactData(): Observable<any> {
+    return this.http.get('../assets/data/contact.json')
+  }
 }

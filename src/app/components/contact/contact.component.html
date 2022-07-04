@@ -1,0 +1,68 @@
+<section class="contact section" id="contact">
+    <h2 class="section__title contact__section__title">Contacto</h2>
+    <div class="contact__container container grid">
+        <div>
+            <div class="contact__info">
+                <i class="uil uil-envelope-alt contact__icon"></i>
+                <div>
+                    <h3 class="contact__title">Email</h3>
+                    <span class="contact__subtitle">
+                        {{contactData.email}}
+                    </span>
+                </div>
+            </div>
+            <div class="contact__info">
+                <i class="uil uil-map-marker contact__icon"></i>
+                <div>
+                    <h3 class="contact__title">Localización</h3>
+                    <span class="contact__subtitle">
+                        {{contactData.location}}
+                    </span>
+                </div>
+            </div>
+        </div>
+        <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+                <div class="contact__content">
+                    <label for="nombre" class="label">
+                        Nombre
+                    </label>
+                    <input type="text" class="input">
+                </div>
+                <div class="contact__content">
+                    <label for="email" class="label">
+                        Email
+                    </label>
+                    <input type="email" class="input">
+                </div>
+            </div>
+            <div class="contact__content">
+                <label for="proyecto" class="label">
+                    Proyecto
+                </label>
+                <input type="text" class="input">
+            </div>
+            <div class="contact__content">
+                <label for="mensaje" class="label">
+                    Mensaje
+                </label>
+                <textarea 
+                    name="mensaje"
+                    id="mensaje"
+                    class="input"
+                    cols="0"
+                    rows="5"
+                >
+                </textarea>
+            </div>
+            <div>
+                <a 
+                    routerLink="/contact"
+                    class="btn btn-flex"
+                >
+                    Enviar >
+                </a>
+            </div>
+        </form>
+    </div>
+</section>
