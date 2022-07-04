@@ -40,6 +40,6 @@
 }
 
 .nav__list {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: 2rem;
 }

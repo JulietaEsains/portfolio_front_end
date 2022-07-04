@@ -1,0 +1,10 @@
+<section class="skills section" id="skills">
+    <h2 class="section__title">Habilidades</h2>
+    <div class="skills__container container grid">
+        <app-skills-tab
+            *ngFor="let skillTab of skillTabs"
+            [skillTab]="skillTab"
+        >
+        </app-skills-tab>
+    </div>
+</section>
