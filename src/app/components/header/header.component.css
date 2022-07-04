@@ -16,7 +16,7 @@
 #yo-programo {
     display: flex;
     gap: .5rem;
-    transition: .01s;
+    transition: .5s;
     color: var(--title-color);
     font-weight: var(--medium-font);
 }
