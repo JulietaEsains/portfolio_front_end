@@ -14,9 +14,7 @@ export class AboutMeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.portfolioService.getAboutMeData().subscribe(data => {
-      this.aboutMeData = data
-    })
+    this.portfolioService.getAboutMeData().subscribe(data => this.aboutMeData = data)
   }
 
 }
