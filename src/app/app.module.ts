@@ -12,6 +12,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillsTabComponent } from './components/skills-tab/skills-tab.component';
+import { QualificationComponent } from './components/qualification/qualification.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SkillsTabComponent } from './components/skills-tab/skills-tab.component
     ContactComponent,
     FooterComponent,
     SkillsComponent,
-    SkillsTabComponent
+    SkillsTabComponent,
+    QualificationComponent
   ],
   imports: [
     BrowserModule,

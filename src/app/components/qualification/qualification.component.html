@@ -1,0 +1,62 @@
+<section class="qualification section" id="qualification">
+    <h2 class="section__title">Habilitación</h2>
+    <div class="qualification__container container">
+        <div class="qualification__tabs">
+            <div 
+                class="qualification__btn btn-flex"
+                data-target="#education"
+                [ngClass]="(currentTab === 'education') ? 'qualification__active' : ''"
+                (click)="changeCurrentTab('education')"
+            >
+                <i class="uil uil-graduation-cap qualification__icon"></i>
+                Educación
+            </div>
+            <div 
+                class="qualification__btn btn-flex"
+                data-target="#experience"
+                [ngClass]="(currentTab === 'experience') ? 'qualification__active' : ''"
+                (click)="changeCurrentTab('experience')"
+            >
+                <i class="uil uil-briefcase-alt qualification__icon"></i>
+                Experiencia
+            </div>
+        </div>
+        <div 
+            class="qualification__sections"
+            *ngFor="let tab of qualificationData.tabs"
+            [ngClass]="(currentTab === tab.name) ? 'qualification__active' : ''"
+        >
+            <div 
+                *ngFor="let item of tab.items; let i = index"
+                class="qualification__content"
+                [id]="tab.name"
+                data-content
+            >
+                <div class="qualification__data">
+                    <div *ngIf="i % 2 == 1"></div>
+                    <div *ngIf="i % 2 == 1">
+                        <span class="qualification__circle">
+                        </span>
+                        <span class="qualification__line" *ngIf="i !== tab.items.length - 1"></span>
+                    </div>
+                    <div 
+                        class="qualification__data__filling"
+                        [ngStyle]="{'background-image': 'linear-gradient(rgba(250, 250, 250, .85), rgba(250, 250, 250, .85)), url(' + item.pictureUrl + ')'}"
+                    >
+                        <h3 class="qualification__title">{{item.title}}</h3>
+                        <span class="qualification__subtitle">{{item.subtitle}}</span>
+                        <div class="qualification__calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            {{item.beginning}} - {{item.end}}
+                        </div>
+                    </div>
+                    <div *ngIf="(i == 0) || (i % 2 == 0)">
+                        <span class="qualification__circle">
+                        </span>
+                        <span class="qualification__line" *ngIf="i !== tab.items.length - 1"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

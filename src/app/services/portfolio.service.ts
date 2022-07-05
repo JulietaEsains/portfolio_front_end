@@ -19,6 +19,12 @@ export class PortfolioService {
     return this.http.get('../assets/data/about-me.json')
   }
 
+  // TODO: getSkillsData()
+
+  getQualificationData(): Observable<any> {
+    return this.http.get('../assets/data/qualification.json')
+  }
+
   getContactData(): Observable<any> {
     return this.http.get('../assets/data/contact.json')
   }
