@@ -2,8 +2,7 @@
     <a 
         [routerLink]="section.routerLink" 
         class="nav__link"
-        (click)="goToSection(section)"
-        [style.color]="section.active ? 'var(--first-color)' : 'var(--title-color)'"
+        [style.color]="(router.url === section.routerLink) ? 'var(--first-color)' : 'var(--title-color)'"
     >
         {{section.name}}
     </a>

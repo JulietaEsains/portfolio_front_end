@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Section, SECTIONS } from 'src/app/sections';
 
 @Component({
@@ -9,20 +10,11 @@ import { Section, SECTIONS } from 'src/app/sections';
 export class HeaderItemComponent implements OnInit {
   @Input() section: Section = SECTIONS[0] 
 
-  constructor() { }
+  constructor(
+    public router: Router
+  ) { }
 
   ngOnInit(): void {
-  }
-
-  goToSection(sectionToGo: Section) {
-    // Pongo todas las secciones como inactivas excepto aquella a la que quiero acceder
-    for (let section of SECTIONS) {
-      if (section === sectionToGo) {
-        section.active = true
-      } else {
-        section.active = false
-      }
-    }
   }
 
 }
