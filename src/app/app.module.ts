@@ -9,10 +9,10 @@ import { HeaderItemComponent } from './components/header-item/header-item.compon
 import { HomeComponent } from './components/home/home.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { QualificationComponent } from './components/qualification/qualification.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { SkillsTabComponent } from './components/skills-tab/skills-tab.component';
-import { QualificationComponent } from './components/qualification/qualification.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +24,6 @@ import { QualificationComponent } from './components/qualification/qualification
     ContactComponent,
     FooterComponent,
     SkillsComponent,
-    SkillsTabComponent,
     QualificationComponent
   ],
   imports: [
