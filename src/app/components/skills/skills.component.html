@@ -27,6 +27,18 @@
                 <div class="skills_data">
                     <div class="skills__title">
                         <h3 class="skills__name">{{skill.name}}</h3>
+                        <div class="skills__edit">
+                            <i 
+                                class="uil uil-pen edit"
+                                (click)="updateSkill(skillTab, skillTab.skills)"
+                            >
+                            </i>
+                            <i 
+                            class="uil uil-times delete delete-skill"
+                            (click)="deleteSkill(skillTab, skill)"
+                            >
+                            </i>
+                        </div>
                     </div>
                     <div class="skills__bar">
                         <span 

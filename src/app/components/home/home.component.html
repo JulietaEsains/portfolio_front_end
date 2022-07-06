@@ -21,7 +21,8 @@
             <div class="home__img">
                 <img 
                     [src]="home.bannerSrc"
-                    alt="Julieta Esains Banner" class="home__img-banner"
+                    alt="Julieta Esains Banner" 
+                    class="home__img-banner"
                 >
             </div>
 
@@ -30,7 +31,13 @@
                 <h3 class="home__subtitle">{{home.subtitle}}</h3>
                 <p class="home__description">
                     {{home.description}}
+                    <i 
+                        class="uil uil-pen edit"
+                        (click)="updateHome()"
+                    >
+                    </i>
                 </p>
+                <!-- TODO: agregar botón que lleve a la parte de contacto -->
             </div>
         </div>
     </div>

@@ -18,6 +18,7 @@ export interface Skill {
 }
 
 export interface SkillTab {
+    id?: number,
     title: string,
     iconClass: string,
     skills: Skill[],

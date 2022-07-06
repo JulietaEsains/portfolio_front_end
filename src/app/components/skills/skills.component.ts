@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { SkillTab } from 'src/app/interfaces';
+import { Skill, SkillTab } from 'src/app/interfaces';
 import { PortfolioService } from 'src/app/services/portfolio.service';
+import { SkillsService } from 'src/app/services/skills.service';
 
 @Component({
   selector: 'app-skills',
@@ -11,10 +12,15 @@ export class SkillsComponent implements OnInit {
   skillTabs: SkillTab[] = []
 
   constructor(
-    private portfolioService: PortfolioService
+    private portfolioService: PortfolioService,
+    private skillsService: SkillsService
   ) { }
 
   ngOnInit(): void {
+    this.getSkillsData()
+  }
+
+  getSkillsData() {
     this.portfolioService.getData('skillTabs').subscribe(data => this.skillTabs = data)
   }
 
@@ -22,4 +28,15 @@ export class SkillsComponent implements OnInit {
     skillTab.open = !skillTab.open
   }
 
+  updateSkill(skillTab: SkillTab, newSkills: Skill[]) {
+    this.skillsService.updateSkillTab(skillTab, newSkills).subscribe(data => this.getSkillsData())
+  }
+
+  deleteSkill(skillTab: SkillTab, skill: Skill) {
+    const newSkills = skillTab.skills.filter(s => s.id !== skill.id)
+
+    if (confirm(`¿Está seguro/a de que quiere borrar esta habilidad (${skill.name} - ${skill.percentage}%)?`)) {
+      this.updateSkill(skillTab, newSkills)
+    }
+  }
 }
