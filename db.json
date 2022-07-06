@@ -1,0 +1,143 @@
+{
+    "home": {
+        "bannerSrc": "assets/img/banner.png",
+        "title": "Hola, soy Julieta Esains",
+        "subtitle": "Desarrolladora Web Full Stack Jr.",
+        "description": "Estudiante de Ingeniería en Sistemas de Información y entusiasta del desarrollo web."
+    },
+    "about-me": {
+        "pictureSrc": "assets/img/aboutMe.png",
+        "description": "Mi objetivo es articular mi carrera universitaria con cada oportunidad de aprendizaje que tomo, incluyendo el ser autodidacta, para participar en proyectos de desarrollo de software significativos.",
+        "cv": "assets/pdf/Curriculum Vitae - Julieta Esains.pdf"
+    },
+    "skillTabs": [
+        {"title": "Desarrollo Front End", "iconClass": "uil uil-brackets-curly",
+            "skills": [
+                {"id": 1, "name": "HTML", "percentage": 75},
+                {"id": 2, "name": "CSS", "percentage": 80},
+                {"id": 3, "name": "JavaScript", "percentage": 65},
+                {"id": 4, "name": "Angular", "percentage": 75},
+                {"id": 5, "name": "React", "percentage": 75}
+            ],
+            "open": false
+        },
+        {"title": "Desarrollo Back End", "iconClass": "uil uil-server-alt",
+            "skills": [
+                {"id": 6, "name": "Java", "percentage": 85},
+                {"id": 7, "name": "Spring Boot", "percentage": 55},
+                {"id": 8, "name": "MySQL", "percentage": 60},
+                {"id": 9, "name": "UML", "percentage": 90},
+                {"id": 10, "name": "Ruby on Rails", "percentage": 70}
+            ],
+            "open": false
+        },
+        {"title": "Habilidades blandas", "iconClass": "uil uil-user-arrows",
+            "skills": [
+                {"id": 11, "name": "Trabajo en equipo", "percentage": 60},
+                {"id": 12, "name": "Organización", "percentage": 85},
+                {"id": 13, "name": "Manejo del tiempo", "percentage": 70},
+                {"id": 14, "name": "Resolución de problemas", "percentage": 75}
+            ],
+            "open": false
+        },
+        {"title": "Otras", "iconClass": "uil uil-nerd",
+            "skills": [
+                {"id": 15, "name": "Inglés", "percentage": 80},
+                {"id": 16, "name": "Lunacy", "percentage": 55}
+            ],
+            "open": false
+        }   
+    ],
+    "qualificationTabs": [
+        {"name": "education", "items": [
+            {
+                "id": 1,
+                "title": "Departamento de Aplicación Docente",
+                "subtitle": "Escuela secundaria",
+                "beginning": "2013",
+                "end": "2014",
+                "pictureUrl": "/assets/img/dadLogo.jpg"
+            },
+            {
+                "id": 2,
+                "title": "Instituto Nuestra Señora del Rosario",
+                "subtitle": "Escuela secundaria: Economía y Gestión Organizacional",
+                "beginning": "2015",
+                "end": "2017",
+                "pictureUrl": ""
+            },
+            {
+                "id": 3,
+                "title": "Universidad Tecnológica Nacional",
+                "subtitle": "Analista Universitaria de Sistemas (título intermedio)",
+                "beginning": "2019",
+                "end": "2022",
+                "pictureUrl": "/assets/img/utnLogo.png"
+            },
+            {
+                "id": 4,
+                "title": "Universidad Tecnológica Nacional",
+                "subtitle": "Ingeniería en Sistemas de Información",
+                "beginning": "2023",
+                "end": "2024",
+                "pictureUrl": "/assets/img/utnLogo.png"
+            }, 
+            {
+                "id": 5,
+                "title": "Argentina Programa",
+                "subtitle": "Certificado de aprobación (1° etapa)",
+                "beginning": "Oct. 2021",
+                "end": "Dic. 2021",
+                "pictureUrl": "/assets/img/headerArgentinaPrograma.png"
+            }
+        ]},
+        {"name": "experience", "items": [
+            {
+                "id": 6,
+                "title": "Tutora autónoma",
+                "subtitle": "Clases particulares de matemática (nivel secundario)",
+                "beginning": "2021",
+                "end": "2021",
+                "pictureUrl": ""
+            }
+        ]}
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "UNO Multijugador",
+            "beginning": "Jun. 2022",
+            "end": "Jul. 2022",
+            "description": "A través de está página, dos personas pueden jugar partidas del juego de cartas UNO entre sí desde diferentes navegadores. Hice la aplicación Front End con React y la API que utiliza, con Ruby on Rails.",
+            "link": "https://github.com/JulietaEsains/uno_card_game_react",
+            "pictureUrl": "assets/img/unoProject.png"
+        },
+        {
+            "id": 2,
+            "title": "TA-TE-TI Multijugador",
+            "beginning": "Abr. 2022",
+            "end": "Jun. 2022",
+            "description": "A través de está página, dos personas pueden jugar partidas del juego ta-te-ti entre sí desde diferentes navegadores. Hice la aplicación Front End con React y la API que utiliza, con Ruby on Rails.",
+            "link": "https://github.com/JulietaEsains/tateti_react",
+            "pictureUrl": "assets/img/tictactoeProject.png"
+        },
+        {
+            "id": 3,
+            "title": "Mi portafolio",
+            "beginning": "Feb. 2022",
+            "end": "Ago. 2022",
+            "description": "Página web que utilizo como carta de presentación y a modo de demostrar parte de lo que he aprendido. Rediseñé la interfaz de usuario basándome en una plantilla pública, realicé su implementación Front End con el framework Angular y la inclusión de funcionalidades Back End tales como la posibilidad de editar el contenido desde aquí mismo mediante un módulo de seguridad con usuario y contraseña y la manipulación de una base de datos.",
+            "link": "http://localhost:4200",
+            "pictureUrl": "assets/img/portfolioProject.png"
+        }
+    ],
+    "contact": {
+        "email": "jesains@gmail.com",
+        "location": "Mendoza, Argentina"
+    },
+    "footer": {
+        "title": "Julieta Esains",
+        "subtitle": "Desarrolladora Web Full Stack Jr.",
+        "copy": "Diseño basado en © Bedimcode"
+    }
+}
