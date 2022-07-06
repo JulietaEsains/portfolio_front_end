@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QualificationTab } from 'src/app/interfaces';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
@@ -7,7 +8,7 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
   styleUrls: ['./qualification.component.css']
 })
 export class QualificationComponent implements OnInit {
-  qualificationData: any
+  qualificationTabs: QualificationTab[] = []
   currentTab: string = 'education'
 
   constructor(
@@ -15,7 +16,7 @@ export class QualificationComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.portfolioService.getQualificationData().subscribe(data => this.qualificationData = data)
+    this.portfolioService.getData('qualificationTabs').subscribe(data => this.qualificationTabs = data)
   }
 
   changeCurrentTab(tab: string) {

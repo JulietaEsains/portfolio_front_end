@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -6,36 +6,23 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PortfolioService {
+  headers = new HttpHeaders().set('Content-Type', 'application/json').set('Accept', 'application/json')
+  httpOptions = {
+    headers: this.headers
+  }
+
+  private apiUrl = 'http://localhost:3000'
 
   constructor(
     private http: HttpClient
   ) { }
 
-  getHomeData(): Observable<any> {
-    return this.http.get('../assets/data/home.json')
+  getData(dataType: string): Observable<any> {
+    return this.http.get(`${this.apiUrl}/${dataType}`)
   }
 
-  getAboutMeData(): Observable<any> {
-    return this.http.get('../assets/data/about-me.json')
-  }
-
-  getSkillsData(): Observable<any> {
-    return this.http.get('../assets/data/skills.json')
-  }
-
-  getQualificationData(): Observable<any> {
-    return this.http.get('../assets/data/qualification.json')
-  }
-
-  getProjectsData(): Observable<any> {
-    return this.http.get('../assets/data/projects.json')
-  }
-
-  getContactData(): Observable<any> {
-    return this.http.get('../assets/data/contact.json')
-  }
-
-  getFooterData(): Observable<any> {
-    return this.http.get('../assets/data/footer.json')
-  }
+  // deleteInstance(dataType: string, id: number): Observable<any> {
+  //   const url: string = `../assets/data/${dataType}.json`
+  //   return this.http.delete(url, this.httpOptions)
+  // } 
 }

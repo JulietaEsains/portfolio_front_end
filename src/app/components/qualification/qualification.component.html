@@ -23,7 +23,7 @@
         </div>
         <div 
             class="qualification__sections"
-            *ngFor="let tab of qualificationData.tabs"
+            *ngFor="let tab of qualificationTabs"
             [ngClass]="(currentTab === tab.name) ? 'qualification__active' : ''"
         >
             <div 

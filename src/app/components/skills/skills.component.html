@@ -2,7 +2,7 @@
     <h2 class="section__title">Habilidades</h2>
     <div class="skills__container container grid">
         <div 
-            *ngFor="let skillTab of skillsData.skillTabs"
+            *ngFor="let skillTab of skillTabs"
             class="skills__content"
             [ngClass]="skillTab.open ? 'skills__open' : 'skills__closed'"
         >

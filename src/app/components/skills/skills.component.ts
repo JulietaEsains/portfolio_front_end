@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SkillTab } from 'src/app/interfaces';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
@@ -7,14 +8,14 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-  skillsData: any
+  skillTabs: SkillTab[] = []
 
   constructor(
     private portfolioService: PortfolioService
   ) { }
 
   ngOnInit(): void {
-    this.portfolioService.getSkillsData().subscribe(data => this.skillsData = data)
+    this.portfolioService.getData('skillTabs').subscribe(data => this.skillTabs = data)
   }
 
   toggleTab(skillTab: any) {

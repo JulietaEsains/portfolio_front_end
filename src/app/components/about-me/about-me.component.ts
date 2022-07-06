@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AboutMe } from 'src/app/interfaces';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
@@ -7,14 +8,18 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
   styleUrls: ['./about-me.component.css']
 })
 export class AboutMeComponent implements OnInit {
-  aboutMeData: any
+  aboutMe: AboutMe = {
+    pictureSrc: '',
+    description: '',
+    cv: ''
+  }
 
   constructor(
     private portfolioService: PortfolioService
   ) { }
 
   ngOnInit(): void {
-    this.portfolioService.getAboutMeData().subscribe(data => this.aboutMeData = data)
+    this.portfolioService.getData('about-me').subscribe(data => this.aboutMe = data)
   }
 
 }

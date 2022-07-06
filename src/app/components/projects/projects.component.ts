@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Project } from 'src/app/interfaces';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 
 import SwiperCore, {
@@ -30,14 +31,15 @@ export class ProjectsComponent implements OnInit {
         clickable: true,
       },
   }
-  projectsData: any
+  
+  projects: Project[] = []
 
   constructor(
     private portfolioService: PortfolioService
   ) { }
 
   ngOnInit(): void {
-    this.portfolioService.getProjectsData().subscribe(data => this.projectsData = data)
+    this.portfolioService.getData('projects').subscribe(data => this.projects = data)
   }
 
 }

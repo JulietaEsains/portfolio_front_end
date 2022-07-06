@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Contact } from 'src/app/interfaces';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
@@ -7,14 +8,17 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  contactData: any
+  contact: Contact = {
+    email: '',
+    location: ''
+  }
 
   constructor(
     private portfolioService: PortfolioService
   ) { }
 
   ngOnInit(): void {
-    this.portfolioService.getContactData().subscribe(data => this.contactData = data)
+    this.portfolioService.getData('contact').subscribe(data => this.contact = data)
   }
 
 }
