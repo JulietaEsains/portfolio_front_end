@@ -27,6 +27,10 @@ export class PortfolioService {
     return this.http.get('../assets/data/qualification.json')
   }
 
+  getProjectsData(): Observable<any> {
+    return this.http.get('../assets/data/projects.json')
+  }
+
   getContactData(): Observable<any> {
     return this.http.get('../assets/data/contact.json')
   }

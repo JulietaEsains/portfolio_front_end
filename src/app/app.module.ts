@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { SwiperModule } from "swiper/angular";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -10,6 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { QualificationComponent } from './components/qualification/qualification.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -18,18 +20,20 @@ import { FooterComponent } from './components/footer/footer.component';
   declarations: [
     AppComponent,
     HeaderComponent,
+    HeaderItemComponent,
     HomeComponent,
     AboutMeComponent,
-    HeaderItemComponent,
-    ContactComponent,
-    FooterComponent,
     SkillsComponent,
-    QualificationComponent
+    QualificationComponent,
+    ProjectsComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

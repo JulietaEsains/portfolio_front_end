@@ -1,0 +1,44 @@
+<section class="projects section" id="projects">
+    <h2 class="section__title">Proyectos</h2>
+    <div class="projects__container container swiper-wrapper">
+        <swiper 
+            class="swiper MySwiper"
+            [config]="swiperConfig"
+        >
+            <ng-template 
+                class="projects__content grid swiper-slide" 
+                swiperSlide
+                *ngFor="let project of projectsData.projects"
+            >
+                <img 
+                    [src]="project.pictureUrl"
+                    [alt]="project.title"
+                    class="project__img"
+                >
+                <div class="project__data">
+                    <div class="project__header">
+                        <h3 class="project__title">{{project.title}}</h3>
+                        <span class="project__date">
+                            {{project.beginning}} - {{project.end}}
+                        </span>
+                    </div>
+                    <p class="project__description">
+                        {{project.description}}
+                    </p>
+                    <a 
+                        [href]="project.link" 
+                        class="btn btn-flex btn-small project__btn"
+                        target="_blank"
+                    >
+                        Visitar >
+                    </a>
+                </div>
+            </ng-template>
+        </swiper>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="swiper-button-next">
+    </div>
+    <div class="swiper-button-prev">
+    </div>
+</section>

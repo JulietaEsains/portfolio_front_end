@@ -9,5 +9,6 @@ export const SECTIONS: Section[] = [
     {name: 'Acerca de mí', routerLink: '/about-me'},
     {name: 'Habilidades', routerLink: '/skills'},
     {name: 'Habilitación', routerLink: '/qualification'},
+    {name: 'Proyectos', routerLink: '/projects'},
     {name: 'Contacto', routerLink: '/contact'}
 ] 

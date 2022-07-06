@@ -1,0 +1,80 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.projects__container {
+    overflow: initial;
+    margin-top: var(--bm-1-5);
+}
+
+.projects__content {
+    align-items: center;
+    column-gap: 5rem;
+    margin-bottom: var(--bm-3);
+    padding: 0 1.5rem;
+}
+
+.project__img {
+    width: 520px;
+    border-radius: .5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    justify-self: center;
+}
+
+.project__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--bm-0-5);
+}
+
+.project__btn {
+    margin-top: 2.5rem;
+}
+
+.project__title {
+    font-size: var(--h3-font-size);
+}
+
+.project__date {
+    font-size: var(--small-font-size);
+    font-weight: var(--medium-font);
+}
+
+.project__description {
+    text-align: justify;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '';
+}
+
+.swiper__project__icon {
+    font-size: 3.5rem;
+    color: var(--first-color);
+}
+
+.swiper-button-prev {
+    left: -3.5rem;
+}
+
+.swiper-button-next {
+    right: -3.5rem;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullets {
+    outline: none;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: var(--first-color-alt);
+}
