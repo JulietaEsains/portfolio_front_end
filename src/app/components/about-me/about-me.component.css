@@ -12,7 +12,7 @@
 
 .aboutMe__description {
     text-align: justify;
-    margin-bottom: var(--bm-2-5);
+    margin-bottom: var(--bm-1-5);
 }
 
 .aboutMe__btn {

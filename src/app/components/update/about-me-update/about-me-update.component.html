@@ -1,0 +1,33 @@
+<div class="update section">
+    <h2 class="section__title">Acerca de mí</h2>
+    <div class="update__container container">
+        <div class="update__form">
+            <div class="update__form__content">
+                <label class="label">Descripción:</label>
+                <textarea 
+                    type="text"
+                    class="input"
+                    rows="5"
+                    cols="0"
+                    [(ngModel)]="aboutMe.description"
+                >
+                </textarea>
+            </div>
+            <div class="update__btns">
+                <a 
+                    routerLink="/about-me"
+                    class="btn btn-flex btn-small"
+                    id="about-me-edit"
+                >
+                    Volver
+                </a>
+                <a 
+                    class="btn btn-flex btn-small"
+                    (click)="updateAboutMeDescription()"
+                >
+                    Actualizar
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

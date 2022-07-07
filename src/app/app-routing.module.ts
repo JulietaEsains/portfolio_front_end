@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { HomeUpdateComponent } from './components/update/home-update/home-update.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { AboutMeUpdateComponent } from './components/update/about-me-update/about-me-update.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { SkillsUpdateComponent } from './components/update/skills-update/skills-update.component';
 import { QualificationComponent } from './components/qualification/qualification.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'update-home', component: HomeUpdateComponent},
   {path: 'about-me', component: AboutMeComponent},
+  {path: 'update-about-me', component: AboutMeUpdateComponent},
   {path: 'skills', component: SkillsComponent},
   {path: 'update-skill-tab/:id', component: SkillsUpdateComponent},
   {path: 'qualification', component: QualificationComponent},

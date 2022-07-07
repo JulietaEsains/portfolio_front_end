@@ -1,23 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AboutMe } from 'src/app/interfaces';
+import { AboutMeService } from 'src/app/services/about-me.service';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
-  selector: 'app-about-me',
-  templateUrl: './about-me.component.html',
-  styleUrls: ['./about-me.component.css']
+  selector: 'app-about-me-update',
+  templateUrl: './about-me-update.component.html',
+  styleUrls: ['./about-me-update.component.css']
 })
-export class AboutMeComponent implements OnInit {
+export class AboutMeUpdateComponent implements OnInit {
   aboutMe: AboutMe = {
-    pictureSrc: '',
-    description: '',
-    cv: ''
+    pictureSrc: '', description: '', cv: ''
   }
 
   constructor(
     private portfolioService: PortfolioService,
-    public router: Router
+    private aboutMeService: AboutMeService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -29,8 +29,8 @@ export class AboutMeComponent implements OnInit {
   }
 
   updateAboutMeDescription() {
-    this.router.navigate(['/update-about-me'])
-    this.getAboutMeData()
+    this.aboutMeService.updateAboutMeDescription(this.aboutMe).subscribe(data => this.getAboutMeData())
+    this.router.navigate(['/about-me'])
   }
 
 }
