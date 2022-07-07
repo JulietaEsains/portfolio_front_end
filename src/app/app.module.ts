@@ -16,6 +16,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillsUpdateComponent } from './components/update/skills-update/skills-update.component';
 import { FormsModule } from '@angular/forms';
+import { HomeUpdateComponent } from './components/update/home-update/home-update.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     ProjectsComponent,
     ContactComponent,
     FooterComponent,
-    SkillsUpdateComponent
+    SkillsUpdateComponent,
+    HomeUpdateComponent
   ],
   imports: [
     BrowserModule,

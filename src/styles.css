@@ -270,7 +270,8 @@ textarea {
     row-gap: 1.5rem;
 }
 
-.update__form__content input {
+.update__form__content input,
+.update__form__content textarea {
     color: var(--title-color);
 }
 

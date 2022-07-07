@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Home } from 'src/app/interfaces';
 import { HomeService } from 'src/app/services/home.service';
 import { PortfolioService } from 'src/app/services/portfolio.service';
@@ -18,14 +19,19 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private portfolioService: PortfolioService,
-    private homeService: HomeService
+    public router: Router
   ) { }
 
   ngOnInit(): void {
+    this.getHomeData()
+  }
+
+  getHomeData() {
     this.portfolioService.getData('home').subscribe(data => this.home = data)
   }
 
-  updateHome() {
-    this.homeService.updateHome().subscribe(data => this.home = data)
+  updateHomeText() {
+    this.router.navigate(['/update-home'])
+    this.getHomeData()
   }
 }

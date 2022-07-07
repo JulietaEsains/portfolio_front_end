@@ -18,7 +18,7 @@ export class HomeService {
     private http: HttpClient
   ) { }
 
-  updateHome(): Observable<Home> {
-    return this.http.put<Home>(this.apiUrl, this.httpOptions)
+  updateHomeText(home: Home): Observable<Home> {
+    return this.http.put<Home>(this.apiUrl, home, this.httpOptions)
   } 
 }
