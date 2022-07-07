@@ -106,7 +106,6 @@
       "id": 3
     },
     {
-      "id": 4,
       "title": "Otras",
       "iconClass": "uil uil-nerd",
       "skills": [
@@ -121,7 +120,8 @@
           "percentage": 55
         }
       ],
-      "open": false
+      "open": true,
+      "id": 4
     }
   ],
   "qualificationTabs": [

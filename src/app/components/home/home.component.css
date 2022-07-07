@@ -45,3 +45,7 @@
     order: 1;
     justify-self: center;
 }
+
+#contact-btn {
+    display: inline;
+}
