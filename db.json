@@ -12,7 +12,6 @@
   },
   "skillTabs": [
     {
-      "id": 1,
       "title": "Desarrollo Front End",
       "iconClass": "uil uil-brackets-curly",
       "skills": [
@@ -42,7 +41,8 @@
           "percentage": 75
         }
       ],
-      "open": true
+      "open": false,
+      "id": 1
     },
     {
       "id": 2,
@@ -50,60 +50,60 @@
       "iconClass": "uil uil-server-alt",
       "skills": [
         {
-          "id": 6,
+          "id": 1,
           "name": "Java",
           "percentage": 85
         },
         {
-          "id": 7,
+          "id": 2,
           "name": "Spring Boot",
           "percentage": 55
         },
         {
-          "id": 8,
+          "id": 3,
           "name": "MySQL",
           "percentage": 60
         },
         {
-          "id": 9,
+          "id": 4,
           "name": "UML",
           "percentage": 90
         },
         {
-          "id": 10,
+          "id": 5,
           "name": "Ruby on Rails",
           "percentage": 70
         }
       ],
-      "open": true
+      "open": false
     },
     {
-      "id": 3,
       "title": "Habilidades blandas",
       "iconClass": "uil uil-user-arrows",
       "skills": [
         {
-          "id": 11,
+          "id": 1,
           "name": "Trabajo en equipo",
           "percentage": 60
         },
         {
-          "id": 12,
+          "id": 2,
           "name": "Organización",
           "percentage": 85
         },
         {
-          "id": 13,
+          "id": 3,
           "name": "Manejo del tiempo",
           "percentage": 70
         },
         {
-          "id": 14,
+          "id": 4,
           "name": "Resolución de problemas",
           "percentage": 75
         }
       ],
-      "open": false
+      "open": true,
+      "id": 3
     },
     {
       "id": 4,
@@ -111,12 +111,12 @@
       "iconClass": "uil uil-nerd",
       "skills": [
         {
-          "id": 15,
+          "id": 1,
           "name": "Inglés",
           "percentage": 80
         },
         {
-          "id": 16,
+          "id": 2,
           "name": "Lunacy",
           "percentage": 55
         }

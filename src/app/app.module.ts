@@ -14,6 +14,8 @@ import { QualificationComponent } from './components/qualification/qualification
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SkillsUpdateComponent } from './components/update/skills-update/skills-update.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,13 +29,15 @@ import { FooterComponent } from './components/footer/footer.component';
     QualificationComponent,
     ProjectsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    SkillsUpdateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    SwiperModule
+    SwiperModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -25,12 +25,12 @@
                 *ngFor="let skill of skillTab.skills"
             >
                 <div class="skills_data">
-                    <div class="skills__title">
+                    <div class="skills__titles">
                         <h3 class="skills__name">{{skill.name}}</h3>
                         <div class="skills__edit">
                             <i 
-                                class="uil uil-pen edit"
-                                (click)="updateSkill(skillTab, skillTab.skills)"
+                                class="uil uil-pen edit edit-skill"
+                                (click)="updateSkill(skillTab, skill)"
                             >
                             </i>
                             <i 

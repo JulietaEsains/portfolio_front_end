@@ -19,6 +19,10 @@ export class SkillsService {
     private http: HttpClient
   ) { }
 
+  getSkillTabToUpdate(tabId: number): Observable<SkillTab> {
+    return this.http.get<SkillTab>(`${this.apiUrl}/${tabId}`)
+  }
+
   updateSkillTab(skillTab: SkillTab, newSkills: Skill[]): Observable<SkillTab> {
     return this.http.put<SkillTab>(`${this.apiUrl}/${skillTab.id}`, {
       title: skillTab.title,

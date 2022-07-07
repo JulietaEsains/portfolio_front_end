@@ -204,3 +204,87 @@ textarea {
         opacity: 1;
     }
 }
+
+/* Modo edición */
+.edit,
+.add,
+.delete {
+    float: right;
+    color: #fff;
+    background-color: var(--first-color);
+    font-size: 1rem;
+    border-radius: 50%;
+    padding: .5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    /* visibility: hidden;
+    opacity: 0; */
+    cursor: pointer;
+}
+
+.edit:hover,
+.add:hover,
+.delete:hover {
+    background-color: var(--first-color-alt);
+}
+
+.edit-skill,
+.edit-qualification,
+.edit-project,
+.delete-skill,
+.delete-qualification,
+.delete-project {
+    font-size: .75rem;
+}
+
+.skills__edit,
+.qualification__edit,
+.projects__edit {
+    display: flex;
+    gap: .5rem;
+}
+
+.qualification__edit__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects__edit {
+    justify-content: end;
+}
+
+/* Actualización de una entidad */
+.update__form__content {
+    background-color: var(--input-color);
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem;
+}
+
+.update__container {
+    justify-content: center;
+    align-items: center;
+}
+
+.update__form {
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.update__form__content input {
+    color: var(--title-color);
+}
+
+.update__btns {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.update__btns a {
+    width: 40%;
+}
+
+.range__input {
+    accent-color: var(--first-color);
+    background-color: var(--first-color-light);
+}
