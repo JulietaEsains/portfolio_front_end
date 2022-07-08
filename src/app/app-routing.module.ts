@@ -8,6 +8,7 @@ import { AboutMeUpdateComponent } from './components/update/about-me-update/abou
 import { SkillsComponent } from './components/skills/skills.component';
 import { SkillsUpdateComponent } from './components/update/skills-update/skills-update.component';
 import { QualificationComponent } from './components/qualification/qualification.component';
+import { QualificationUpdateComponent } from './components/update/qualification-update/qualification-update.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'skills', component: SkillsComponent},
   {path: 'update-skill-tab/:id', component: SkillsUpdateComponent},
   {path: 'qualification', component: QualificationComponent},
+  {path: 'update-qualification-tab/:id', component: QualificationUpdateComponent},
   {path: 'projects', component: ProjectsComponent},
   {path: 'contact', component: ContactComponent}
 ];

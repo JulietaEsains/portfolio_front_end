@@ -35,6 +35,7 @@ export interface Qualification {
 }
 
 export interface QualificationTab {
+    id?: number,
     name: string,
     items: Qualification[]
 }

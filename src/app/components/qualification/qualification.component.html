@@ -33,7 +33,18 @@
                 data-content
             >
                 <div class="qualification__data">
-                    <div *ngIf="i % 2 == 1"></div>
+                    <div 
+                        *ngIf="i % 2 == 1"
+                        class="qualification__edit__container"
+                    >
+                        <div class="qualification__edit">
+                            <i 
+                                class="uil uil-pen edit qualification-edit"
+                                (click)="updateQualification(tab, item)"
+                            >
+                            </i>
+                        </div>
+                    </div>
                     <div *ngIf="i % 2 == 1">
                         <span class="qualification__circle">
                         </span>
@@ -54,6 +65,18 @@
                         <span class="qualification__circle">
                         </span>
                         <span class="qualification__line" *ngIf="i !== tab.items.length - 1"></span>
+                    </div>
+                    <div 
+                        *ngIf="(i == 0) || (i % 2 == 0)"
+                        class="qualification__edit__container"
+                    >
+                        <div class="qualification__edit">
+                            <i 
+                                class="uil uil-pen edit qualification-edit"
+                                (click)="updateQualification(tab, item)"
+                            >
+                            </i>
+                        </div>
                     </div>
                 </div>
             </div>

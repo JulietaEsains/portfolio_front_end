@@ -1,0 +1,54 @@
+<div class="update section">
+    <h2 class="section__title">Habilitación</h2>
+    <div class="update__container container">
+        <div class="update__form">
+            <div class="update__form__content">
+                <label class="label">Título:</label>
+                <input 
+                    type="text" 
+                    class="input"
+                    [(ngModel)]="item.title"
+                >
+            </div>
+            <div class="update__form__content">
+                <label class="label">Subtítulo:</label>
+                <input 
+                    type="text"
+                    class="input"
+                    [(ngModel)]="item.subtitle"
+                >
+            </div>
+            <div class="update__form__content">
+                <label class="label">Fecha de inicio:</label>
+                <input 
+                    type="text"
+                    class="input"
+                    [(ngModel)]="item.beginning"
+                >
+            </div>
+            <div class="update__form__content">
+                <label class="label">Fecha de fin (puede ser "actualidad"):</label>
+                <input 
+                    type="text"
+                    class="input"
+                    [(ngModel)]="item.end"
+                >
+            </div>
+            <!-- TODO: agregar update de imagen -->
+            <div class="update__btns">
+                <a 
+                    routerLink="/qualification"
+                    class="btn btn-flex btn-small"
+                >
+                    Volver
+                </a>
+                <a 
+                    class="btn btn-flex btn-small"
+                    (click)="updateQualification()"
+                >
+                    Actualizar
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

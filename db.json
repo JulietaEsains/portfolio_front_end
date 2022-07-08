@@ -102,7 +102,7 @@
           "percentage": 75
         }
       ],
-      "open": true,
+      "open": false,
       "id": 3
     },
     {
@@ -120,7 +120,7 @@
           "percentage": 55
         }
       ],
-      "open": true,
+      "open": false,
       "id": 4
     }
   ],
@@ -168,20 +168,22 @@
           "end": "Dic. 2021",
           "pictureUrl": "/assets/img/headerArgentinaPrograma.png"
         }
-      ]
+      ],
+      "id": 1
     },
     {
       "name": "experience",
       "items": [
         {
-          "id": 6,
+          "id": 1,
           "title": "Tutora autónoma",
           "subtitle": "Clases particulares de matemática (nivel secundario)",
           "beginning": "2021",
           "end": "2021",
           "pictureUrl": ""
         }
-      ]
+      ],
+      "id": 2
     }
   ],
   "projects": [

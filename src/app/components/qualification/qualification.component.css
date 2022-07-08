@@ -84,3 +84,18 @@
     background-position: 50% 50%;
     background-size: contain;
 }
+
+.qualification__edit__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qualification__edit {
+    display: flex;
+    gap: .5rem;
+}
+
+.qualification-edit {
+    font-size: .75rem;
+}

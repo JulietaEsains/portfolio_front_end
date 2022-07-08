@@ -18,6 +18,7 @@ import { SkillsUpdateComponent } from './components/update/skills-update/skills-
 import { FormsModule } from '@angular/forms';
 import { HomeUpdateComponent } from './components/update/home-update/home-update.component';
 import { AboutMeUpdateComponent } from './components/update/about-me-update/about-me-update.component';
+import { QualificationUpdateComponent } from './components/update/qualification-update/qualification-update.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { AboutMeUpdateComponent } from './components/update/about-me-update/abou
     FooterComponent,
     SkillsUpdateComponent,
     HomeUpdateComponent,
-    AboutMeUpdateComponent
+    AboutMeUpdateComponent,
+    QualificationUpdateComponent
   ],
   imports: [
     BrowserModule,
