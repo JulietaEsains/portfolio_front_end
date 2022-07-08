@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { UiService } from './services/ui.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio_front_end';
+  darkMode: boolean = false
+  currentTheme: string | null = 'light'
+  subscription?: Subscription
+
+  constructor(
+    private uiService: UiService
+  ) {
+    this.subscription = this.uiService.onToggle().subscribe(value => this.darkMode = value)
+  }
+
+  ngOnInit(): void {
+    this.currentTheme = localStorage.getItem('selected-theme')
+    this.darkMode = this.currentTheme == 'dark' ? true : false
+  }
 }

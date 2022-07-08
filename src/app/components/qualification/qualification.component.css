@@ -20,6 +20,11 @@
     color: var(--first-color);
 }
 
+.qualification__btn,
+.qualification__icon {
+    transition: .3s;
+}
+
 .qualification__sections {
     display: grid;
     grid-template-columns: .5fr;

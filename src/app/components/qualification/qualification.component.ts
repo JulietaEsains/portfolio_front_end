@@ -3,6 +3,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Qualification, QualificationTab } from 'src/app/interfaces';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 import { QualificationService } from 'src/app/services/qualification.service';
+import { Subscription } from 'rxjs';
+import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'app-qualification',
@@ -12,13 +14,20 @@ import { QualificationService } from 'src/app/services/qualification.service';
 export class QualificationComponent implements OnInit {
   qualificationTabs: QualificationTab[] = []
   currentTab: string = 'education'
+  darkMode: boolean = false
+  subscription?: Subscription
 
   constructor(
     private portfolioService: PortfolioService,
     private qualificationService: QualificationService,
+    private uiService: UiService,
     private route: ActivatedRoute,
     private router: Router
-  ) { }
+  ) { 
+    this.subscription = this.uiService.onToggle().subscribe((value) => {
+      this.darkMode = value
+    })
+  }
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
@@ -27,6 +36,7 @@ export class QualificationComponent implements OnInit {
       }
     })
     this.getQualificationData()
+    this.darkMode = localStorage.getItem('selected-theme') == 'dark' ? true : false
   }
 
   changeCurrentTab(tab: string) {

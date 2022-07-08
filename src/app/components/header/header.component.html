@@ -25,5 +25,13 @@
                 </app-header-item>
             </ul>
         </div>
+        <!-- Botón para cambiar de tema (claro/oscuro) -->
+        <i 
+            class="uil change-theme"
+            [ngClass]="darkMode ? 'uil-sun' : 'uil-moon'" 
+            id="theme-button"
+            (click)="toggleTheme()"
+        >
+        </i>
     </nav>
 </header>

@@ -57,7 +57,7 @@
                     </div>
                     <div 
                         class="qualification__data__filling"
-                        [ngStyle]="{'background-image': 'linear-gradient(rgba(250, 250, 250, .85), rgba(250, 250, 250, .85)), url(' + item.pictureUrl + ')'}"
+                        [ngStyle]="{'background-image': (!darkMode ? 'linear-gradient(rgba(250, 250, 250, .85), rgba(250, 250, 250, .85)), url(' + item.pictureUrl + ')' : '')}"
                     >
                         <h3 class="qualification__title">{{item.title}}</h3>
                         <span class="qualification__subtitle">{{item.subtitle}}</span>
