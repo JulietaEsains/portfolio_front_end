@@ -96,6 +96,7 @@
     gap: .5rem;
 }
 
-.qualification-edit {
+.qualification-edit,
+.qualification-delete {
     font-size: .75rem;
 }

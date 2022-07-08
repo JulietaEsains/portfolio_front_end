@@ -45,4 +45,12 @@ export class QualificationComponent implements OnInit {
     this.router.navigate(['/update-qualification-tab', tab.id], {queryParams: item})
   }
 
+  deleteQualification(tab: QualificationTab, item: Qualification) {
+    const newQualifications = tab.items.filter(i => i.id !== item.id)
+
+    if (confirm(`¿Está seguro/a de que quiere borrar este elemento (${item.title})?`)) {
+      this.updateQualificationTab(tab, newQualifications)
+    }
+  }
+
 }

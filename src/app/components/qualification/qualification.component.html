@@ -43,6 +43,11 @@
                                 (click)="updateQualification(tab, item)"
                             >
                             </i>
+                            <i 
+                                class="uil uil-times delete qualification-delete"
+                                (click)="deleteQualification(tab, item)"
+                            >
+                            </i>
                         </div>
                     </div>
                     <div *ngIf="i % 2 == 1">
@@ -74,6 +79,11 @@
                             <i 
                                 class="uil uil-pen edit qualification-edit"
                                 (click)="updateQualification(tab, item)"
+                            >
+                            </i>
+                            <i 
+                                class="uil uil-times delete qualification-delete"
+                                (click)="deleteQualification(tab, item)"
                             >
                             </i>
                         </div>
