@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Project } from 'src/app/interfaces';
 import { PortfolioService } from 'src/app/services/portfolio.service';
+import { ProjectsService } from 'src/app/services/projects.service';
 
 import SwiperCore, {
   Navigation,
@@ -21,7 +22,7 @@ SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 export class ProjectsComponent implements OnInit {
   swiperConfig = {
       cssMode: true,
-      loop: true,
+      loop: false,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -35,11 +36,22 @@ export class ProjectsComponent implements OnInit {
   projects: Project[] = []
 
   constructor(
-    private portfolioService: PortfolioService
+    private portfolioService: PortfolioService,
+    private projectsService: ProjectsService
   ) { }
 
   ngOnInit(): void {
+    this.getProjectsData()
+  }
+
+  getProjectsData() {
     this.portfolioService.getData('projects').subscribe(data => this.projects = data)
+  }
+
+  deleteProject(project: Project) {
+    if (confirm(`¿Está seguro/a de que quiere borrar este proyecto (${project.title})?`)) {
+      this.projectsService.deleteProject(project.id).subscribe(data => this.getProjectsData())
+    }
   }
 
 }

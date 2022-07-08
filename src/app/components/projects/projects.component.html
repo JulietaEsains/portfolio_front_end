@@ -24,7 +24,13 @@
                     </div>
                     <p class="project__description">
                         {{project.description}}
-                    </p>
+                        <div class="projects__edit">
+                            <i 
+                                class="uil uil-times delete delete-project"
+                                (click)="deleteProject(project)"
+                            >
+                            </i>
+                        </div>
                     <a 
                         [href]="project.link" 
                         class="btn btn-flex btn-small project__btn"

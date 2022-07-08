@@ -78,3 +78,7 @@
 .swiper-button-next:hover {
     color: var(--first-color-alt);
 }
+
+.projects__edit {
+    justify-content: end;
+}

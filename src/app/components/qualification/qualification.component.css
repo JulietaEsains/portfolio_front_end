@@ -90,13 +90,3 @@
     align-items: center;
     justify-content: center;
 }
-
-.qualification__edit {
-    display: flex;
-    gap: .5rem;
-}
-
-.qualification-edit,
-.qualification-delete {
-    font-size: .75rem;
-}

@@ -243,16 +243,6 @@ textarea {
     gap: .5rem;
 }
 
-.qualification__edit__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.projects__edit {
-    justify-content: end;
-}
-
 /* Actualización de una entidad */
 .update__form__content {
     background-color: var(--input-color);
