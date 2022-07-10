@@ -10,6 +10,17 @@
     align-self: center;
 }
 
+.aboutMe__data {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMe__edit {
+    display: flex;
+    justify-content: center;
+    padding-bottom: var(--bm-1);
+}
+
 .aboutMe__description {
     text-align: justify;
     margin-bottom: var(--bm-1-5);

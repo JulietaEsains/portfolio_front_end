@@ -7,13 +7,15 @@
             class="aboutMe__img"
         >
         <div class="aboutMe__data">
-            <p class="aboutMe__description">
-                {{aboutMe.description}}
+            <div class="aboutMe__edit">
                 <i 
                     class="uil uil-pen edit"
                     (click)="updateAboutMeDescription()"
                 >
                 </i>
+            </div>
+            <p class="aboutMe__description">
+                {{aboutMe.description}}
             </p>
             <div class="aboutMe__btn">
                 <a 
