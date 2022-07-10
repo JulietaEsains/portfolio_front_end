@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { HomeUpdateComponent } from './components/update/home-update/home-update.component';
 import { AboutMeUpdateComponent } from './components/update/about-me-update/about-me-update.component';
 import { QualificationUpdateComponent } from './components/update/qualification-update/qualification-update.component';
+import { ProjectsUpdateComponent } from './components/update/projects-update/projects-update.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { QualificationUpdateComponent } from './components/update/qualification-
     SkillsUpdateComponent,
     HomeUpdateComponent,
     AboutMeUpdateComponent,
-    QualificationUpdateComponent
+    QualificationUpdateComponent,
+    ProjectsUpdateComponent
   ],
   imports: [
     BrowserModule,

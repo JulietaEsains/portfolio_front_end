@@ -10,6 +10,7 @@ import { SkillsUpdateComponent } from './components/update/skills-update/skills-
 import { QualificationComponent } from './components/qualification/qualification.component';
 import { QualificationUpdateComponent } from './components/update/qualification-update/qualification-update.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ProjectsUpdateComponent } from './components/update/projects-update/projects-update.component';
 import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'qualification', component: QualificationComponent},
   {path: 'update-qualification-tab/:id', component: QualificationUpdateComponent},
   {path: 'projects', component: ProjectsComponent},
+  {path: 'update-project/:id', component: ProjectsUpdateComponent},
   {path: 'contact', component: ContactComponent}
 ];
 

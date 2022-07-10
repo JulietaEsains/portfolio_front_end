@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 import { Project } from 'src/app/interfaces';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 import { ProjectsService } from 'src/app/services/projects.service';
@@ -37,7 +38,8 @@ export class ProjectsComponent implements OnInit {
 
   constructor(
     private portfolioService: PortfolioService,
-    private projectsService: ProjectsService
+    private projectsService: ProjectsService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -46,6 +48,10 @@ export class ProjectsComponent implements OnInit {
 
   getProjectsData() {
     this.portfolioService.getData('projects').subscribe(data => this.projects = data)
+  }
+
+  updateProject(project: Project) {
+    this.router.navigate(['/update-project', project.id])
   }
 
   deleteProject(project: Project) {

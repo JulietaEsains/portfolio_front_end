@@ -26,6 +26,11 @@
                         {{project.description}}
                         <div class="projects__edit">
                             <i 
+                                class="uil uil-pen edit edit-project"
+                                (click)="updateProject(project)"
+                            >
+                            </i>
+                            <i 
                                 class="uil uil-times delete delete-project"
                                 (click)="deleteProject(project)"
                             >
