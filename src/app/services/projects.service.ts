@@ -18,6 +18,10 @@ export class ProjectsService {
     private http: HttpClient
   ) { }
 
+  addProject(project: Project): Observable<Project> {
+    return this.http.post<Project>(`${this.apiUrl}`, project, this.httpOptions)
+  }
+
   getProjectToUpdate(projectId: number): Observable<Project> {
     return this.http.get<Project>(`${this.apiUrl}/${projectId}`, this.httpOptions)
   }

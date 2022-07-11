@@ -260,34 +260,41 @@ textarea {
     gap: .5rem;
 }
 
-/* Actualización de una entidad */
+/* Creación/Actualización de una entidad */
+.new__form__content,
 .update__form__content {
     background-color: var(--input-color);
     border-radius: .5rem;
     padding: .75rem 1rem .25rem;
 }
 
+.new__container,
 .update__container {
     justify-content: center;
     align-items: center;
 }
 
+.new__form,
 .update__form {
     display: grid;
     row-gap: 1.5rem;
 }
 
+.new__form__content input,
+.new__form__content textarea,
 .update__form__content input,
 .update__form__content textarea {
     color: var(--title-color);
 }
 
+.new__btns,
 .update__btns {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
 }
 
+.new__btns a,
 .update__btns a {
     width: 40%;
 }

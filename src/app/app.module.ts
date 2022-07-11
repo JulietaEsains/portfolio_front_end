@@ -20,6 +20,7 @@ import { HomeUpdateComponent } from './components/update/home-update/home-update
 import { AboutMeUpdateComponent } from './components/update/about-me-update/about-me-update.component';
 import { QualificationUpdateComponent } from './components/update/qualification-update/qualification-update.component';
 import { ProjectsUpdateComponent } from './components/update/projects-update/projects-update.component';
+import { AddProjectComponent } from './components/add/add-project/add-project.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { ProjectsUpdateComponent } from './components/update/projects-update/pro
     HomeUpdateComponent,
     AboutMeUpdateComponent,
     QualificationUpdateComponent,
-    ProjectsUpdateComponent
+    ProjectsUpdateComponent,
+    AddProjectComponent
   ],
   imports: [
     BrowserModule,

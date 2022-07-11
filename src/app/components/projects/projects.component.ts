@@ -50,6 +50,10 @@ export class ProjectsComponent implements OnInit {
     this.portfolioService.getData('projects').subscribe(data => this.projects = data)
   }
 
+  addProject() {
+    this.router.navigate(['/add-project'])
+  }
+
   updateProject(project: Project) {
     this.router.navigate(['/update-project', project.id])
   }

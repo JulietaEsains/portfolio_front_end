@@ -1,0 +1,64 @@
+<div class="new section">
+    <h2 class="section__title">Proyecto</h2>
+    <div class="new__container container">
+        <div class="new__form">
+            <div class="new__form__content">
+                <label class="label">Título:</label>
+                <input 
+                    type="text" 
+                    class="input"
+                    [(ngModel)]="project.title"
+                >
+            </div>
+            <div class="new__form__content">
+                <label class="label">Fecha de inicio:</label>
+                <input 
+                    type="text"
+                    class="input"
+                    [(ngModel)]="project.beginning"
+                >
+            </div>
+            <div class="new__form__content">
+                <label class="label">Fecha de fin (puede ser "en proceso"):</label>
+                <input 
+                    type="text"
+                    class="input"
+                    [(ngModel)]="project.end"
+                >
+            </div>
+            <div class="new__form__content">
+                <label class="label">Descripción:</label>
+                <textarea 
+                    type="text"
+                    class="input"
+                    rows="5"
+                    cols="0"
+                    [(ngModel)]="project.description"
+                >
+                </textarea>
+            </div>
+            <div class="new__form__content">
+                <label class="label">Link:</label>
+                <input 
+                    type="text"
+                    class="input"
+                    [(ngModel)]="project.link"
+                >
+            </div>
+            <div class="new__btns">
+                <a 
+                    routerLink="/projects"
+                    class="btn btn-flex btn-small"
+                >
+                    Volver
+                </a>
+                <a 
+                    class="btn btn-flex btn-small"
+                    (click)="addProject()"
+                >
+                    Crear
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
