@@ -45,7 +45,6 @@
       "id": 1
     },
     {
-      "id": 2,
       "title": "Desarrollo Back End",
       "iconClass": "uil uil-server-alt",
       "skills": [
@@ -75,7 +74,8 @@
           "percentage": 70
         }
       ],
-      "open": false
+      "open": false,
+      "id": 2
     },
     {
       "title": "Habilidades blandas",
@@ -102,7 +102,7 @@
           "percentage": 75
         }
       ],
-      "open": true,
+      "open": false,
       "id": 3
     },
     {

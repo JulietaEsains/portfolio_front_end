@@ -26,7 +26,7 @@ export class SkillsComponent implements OnInit {
     this.portfolioService.getData('skillTabs').subscribe(data => this.skillTabs = data)
   }
 
-  toggleTab(skillTab: any) {
+  toggleTab(skillTab: SkillTab) {
     skillTab.open = !skillTab.open
   }
 

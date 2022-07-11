@@ -28,7 +28,7 @@ export class SkillsService {
       title: skillTab.title,
       iconClass: skillTab.iconClass,
       skills: newSkills,
-      open: true
+      open: skillTab.open
     })
   }
 }
