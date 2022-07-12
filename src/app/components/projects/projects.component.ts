@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Project } from 'src/app/interfaces';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 import { ProjectsService } from 'src/app/services/projects.service';
+import { UiService } from 'src/app/services/ui.service';
 
 import SwiperCore, {
   Navigation,
@@ -34,9 +35,11 @@ export class ProjectsComponent implements OnInit {
       },
   }
   
+  editMode: boolean = false
   projects: Project[] = []
 
   constructor(
+    private uiService: UiService,
     private portfolioService: PortfolioService,
     private projectsService: ProjectsService,
     private router: Router
@@ -44,6 +47,8 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProjectsData()
+    this.editMode = localStorage.getItem('edit-mode') == 'on' ? true : false
+    this.uiService.isEditModeOn().subscribe(value => this.editMode = value)
   }
 
   getProjectsData() {

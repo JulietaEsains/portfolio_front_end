@@ -1,0 +1,57 @@
+<div class="login section">
+    <div class="login__container container">
+        <div class="login__modal">
+            <div class="login__modal__content">
+                <h4 class="login__modal__title">
+                    ¿Es usted dueño/a de este sitio?
+                </h4>
+                <i 
+                    class="uil uil-times login__modal__close"
+                    (click)="toggleLoginModal()"    
+                >
+                </i>
+                <div class="login__modal__detail grid">
+                    <p>
+                        Ingrese con su usuario y contraseña para acceder al <b>modo edición</b>.
+                    </p>
+                    <div class="login__form__content">
+                        <label 
+                            for="user"
+                            class="label"
+                        >
+                            Usuario
+                        </label>
+                        <input 
+                            type="text" 
+                            class="input"
+                            id="username"
+                            [(ngModel)]="user.username"
+                        >
+                    </div>
+                    <div class="login__form__content">
+                        <label 
+                            for="password"
+                            class="label"
+                        >
+                            Contraseña
+                        </label>
+                        <input 
+                            type="password" 
+                            class="input"
+                            id="password"
+                            [(ngModel)]="user.password"
+                        >
+                    </div>
+                    <div class="enter__btn">
+                        <a
+                            class="btn btn-flex"
+                            (click)="login()"
+                        >
+                            Ingresar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

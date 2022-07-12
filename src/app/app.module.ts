@@ -23,6 +23,7 @@ import { ProjectsUpdateComponent } from './components/update/projects-update/pro
 import { AddProjectComponent } from './components/add/add-project/add-project.component';
 import { AddSkillComponent } from './components/add/add-skill/add-skill.component';
 import { AddQualificationComponent } from './components/add/add-qualification/add-qualification.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { AddQualificationComponent } from './components/add/add-qualification/ad
     ProjectsUpdateComponent,
     AddProjectComponent,
     AddSkillComponent,
-    AddQualificationComponent
+    AddQualificationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

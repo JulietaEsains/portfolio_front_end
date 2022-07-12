@@ -16,7 +16,7 @@ export class AppComponent {
   constructor(
     private uiService: UiService
   ) {
-    this.subscription = this.uiService.onToggle().subscribe(value => this.darkMode = value)
+    this.uiService.getCurrentTheme().subscribe(value => this.darkMode = value)
   }
 
   ngOnInit(): void {

@@ -24,7 +24,10 @@
                     </div>
                     <p class="project__description">
                         {{project.description}}
-                        <div class="projects__edit">
+                        <div 
+                            class="projects__edit"
+                            *ngIf="editMode"
+                        >
                             <i 
                                 class="uil uil-pen edit edit-project"
                                 (click)="updateProject(project)"
@@ -52,6 +55,7 @@
         <i 
             class="uil uil-plus add add-project"
             (click)="addProject()"
+            *ngIf="editMode"
         >
         </i>
     </div>

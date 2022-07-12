@@ -33,5 +33,26 @@
             (click)="toggleTheme()"
         >
         </i>
+        <!-- Botón de login -->
+        <div class="login__btn">
+            <a 
+                class="btn btn-flex btn-small login__btn"
+                (click)="toggleLoginModal()"
+                *ngIf="!editMode"
+            >
+                Iniciar sesión
+            </a>
+            <a 
+                class="btn btn-flex btn-small login__btn"
+                (click)="logout()"
+                *ngIf="editMode"
+            >
+                Cerrar sesión
+            </a>
+        </div>
     </nav>
+    <app-login
+        *ngIf="isLoginModalActive"
+    >
+    </app-login>
 </header>

@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Skill, SkillTab } from 'src/app/interfaces';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 import { SkillsService } from 'src/app/services/skills.service';
+import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'app-skills',
@@ -10,9 +11,11 @@ import { SkillsService } from 'src/app/services/skills.service';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
+  editMode: boolean = false
   skillTabs: SkillTab[] = []
 
   constructor(
+    private uiService: UiService,
     private portfolioService: PortfolioService,
     private skillsService: SkillsService,
     private router: Router
@@ -20,6 +23,8 @@ export class SkillsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getSkillsData()
+    this.editMode = localStorage.getItem('edit-mode') == 'on' ? true : false
+    this.uiService.isEditModeOn().subscribe(value => this.editMode = value)
   }
 
   getSkillsData() {

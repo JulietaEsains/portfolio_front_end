@@ -1,0 +1,59 @@
+.login {
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+}
+
+.login__container {
+    display: flex;
+    justify-content: end;
+}
+
+.login__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    z-index: var(--z-modal);
+    transition: .3s;
+}
+
+.login__modal__content {
+    position: relative;
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.login__modal__detail {
+    row-gap: 1rem;
+}
+
+.login__modal__title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--medium-font);
+    margin-bottom: var(--bm-0-5);
+}
+
+.login__modal__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    cursor: pointer;
+}
+
+#password {
+    font-family: sans-serif;
+}
+
+.enter__btn {
+    margin: auto;
+    cursor: pointer;
+}

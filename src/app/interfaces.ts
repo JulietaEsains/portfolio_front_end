@@ -60,3 +60,9 @@ export interface Footer {
     subtitle: string,
     copy: string
 }
+
+export interface User {
+    id?: number,
+    username: string,
+    password: string
+}

@@ -29,12 +29,6 @@
     color: var(--text-color);
 }
 
-.contact__content {
-    background-color: var(--input-color);
-    border-radius: .5rem;
-    padding: .75rem 1rem .25rem;
-}
-
 .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
 }

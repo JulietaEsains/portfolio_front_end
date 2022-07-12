@@ -223,5 +223,12 @@
     "title": "Julieta Esains",
     "subtitle": "Desarrolladora Web Full Stack Jr.",
     "copy": "Diseño basado en © Bedimcode"
-  }
+  },
+  "users": [
+    {
+      "id": 1,
+      "username": "julieta_esains",
+      "password": "admin1234"
+    }
+  ]
 }

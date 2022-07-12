@@ -22,6 +22,7 @@
                 <i 
                     class="uil uil-plus add add-skill"
                     (click)="addSkill(skillTab)"
+                    *ngIf="editMode"
                 >
                 </i>
             </div>
@@ -32,15 +33,18 @@
                 <div class="skills_data">
                     <div class="skills__titles">
                         <h3 class="skills__name">{{skill.name}}</h3>
-                        <div class="skills__edit">
+                        <div 
+                            class="skills__edit"
+                            *ngIf="editMode"
+                        >
                             <i 
                                 class="uil uil-pen edit edit-skill"
                                 (click)="updateSkill(skillTab, skill)"
                             >
                             </i>
                             <i 
-                            class="uil uil-times delete delete-skill"
-                            (click)="deleteSkill(skillTab, skill)"
+                                class="uil uil-times delete delete-skill"
+                                (click)="deleteSkill(skillTab, skill)"
                             >
                             </i>
                         </div>

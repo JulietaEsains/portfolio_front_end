@@ -15,6 +15,7 @@ export class QualificationComponent implements OnInit {
   qualificationTabs: QualificationTab[] = []
   currentTab: string = 'education'
   darkMode: boolean = false
+  editMode: boolean = false
   subscription?: Subscription
 
   constructor(
@@ -24,9 +25,9 @@ export class QualificationComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router
   ) { 
-    this.subscription = this.uiService.onToggle().subscribe((value) => {
-      this.darkMode = value
-    })
+    this.subscription = this.uiService.getCurrentTheme().subscribe(value => this.darkMode = value)
+    this.editMode = localStorage.getItem('edit-mode') == 'on' ? true : false
+    this.uiService.isEditModeOn().subscribe(value => this.editMode = value)
   }
 
   ngOnInit(): void {

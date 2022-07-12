@@ -134,6 +134,13 @@ textarea {
     resize: none;
 }
 
+.contact__content,
+.login__form__content {
+    background-color: var(--input-color);
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem;
+}
+
 /* CLASES CSS REUTILIZABLES */
 .section {
     padding: 4.5rem 0 2rem;
@@ -233,8 +240,6 @@ textarea {
     border-radius: 50%;
     padding: .5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
-    /* visibility: hidden;
-    opacity: 0; */
     cursor: pointer;
 }
 

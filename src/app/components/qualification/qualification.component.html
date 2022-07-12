@@ -37,7 +37,10 @@
                         *ngIf="i % 2 == 1"
                         class="qualification__edit__container"
                     >
-                        <div class="qualification__edit">
+                        <div 
+                            class="qualification__edit"
+                            *ngIf="editMode"
+                        >
                             <i 
                                 class="uil uil-pen edit edit-qualification"
                                 (click)="updateQualification(tab, item)"
@@ -75,7 +78,10 @@
                         *ngIf="(i == 0) || (i % 2 == 0)"
                         class="qualification__edit__container"
                     >
-                        <div class="qualification__edit">
+                        <div 
+                            class="qualification__edit"
+                            *ngIf="editMode"
+                        >
                             <i 
                                 class="uil uil-pen edit edit-qualification"
                                 (click)="updateQualification(tab, item)"
@@ -94,7 +100,8 @@
         <div class="add__qualification__container">
             <i 
                 class="uil uil-plus add add-qualification"
-                (click)="addQualification(currentTab)"    
+                (click)="addQualification(currentTab)"  
+                *ngIf="editMode"  
             >
             </i>
         </div>
