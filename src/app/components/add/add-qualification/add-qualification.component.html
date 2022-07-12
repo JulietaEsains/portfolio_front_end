@@ -1,0 +1,54 @@
+<div class="new section">
+    <h2 class="section__title">Habilitación</h2>
+    <div class="new__container container">
+        <div class="new__form">
+            <div class="new__form__content">
+                <label class="label">Título:</label>
+                <input 
+                    type="text" 
+                    class="input"
+                    [(ngModel)]="item.title"
+                >
+            </div>
+            <div class="new__form__content">
+                <label class="label">Subtítulo:</label>
+                <input 
+                    type="text"
+                    class="input"
+                    [(ngModel)]="item.subtitle"
+                >
+            </div>
+            <div class="new__form__content">
+                <label class="label">Fecha de inicio:</label>
+                <input 
+                    type="text"
+                    class="input"
+                    [(ngModel)]="item.beginning"
+                >
+            </div>
+            <div class="new__form__content">
+                <label class="label">Fecha de fin (puede ser "actualidad"):</label>
+                <input 
+                    type="text"
+                    class="input"
+                    [(ngModel)]="item.end"
+                >
+            </div>
+            <!-- TODO: agregar subida de imagen -->
+            <div class="new__btns">
+                <a 
+                    routerLink="/qualification"
+                    class="btn btn-flex btn-small"
+                >
+                    Volver
+                </a>
+                <a 
+                    class="btn btn-flex btn-small"
+                    (click)="addQualification()"
+                >
+                    Crear
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

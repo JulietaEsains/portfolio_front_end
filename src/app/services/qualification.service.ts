@@ -14,7 +14,7 @@ export class QualificationService {
     private http: HttpClient
   ) { }
 
-  getQualificationTabToUpdate(tabId: number): Observable<QualificationTab> {
+  getQualificationTabToUpdate(tabId: number | undefined): Observable<QualificationTab> {
     return this.http.get<QualificationTab>(`${this.apiUrl}/${tabId}`)
   }
 

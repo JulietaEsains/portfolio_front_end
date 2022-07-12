@@ -95,3 +95,8 @@
     align-items: center;
     justify-content: center;
 }
+
+.add__qualification__container {
+    display: flex;
+    justify-content: center;
+}

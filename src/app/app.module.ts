@@ -22,6 +22,7 @@ import { QualificationUpdateComponent } from './components/update/qualification-
 import { ProjectsUpdateComponent } from './components/update/projects-update/projects-update.component';
 import { AddProjectComponent } from './components/add/add-project/add-project.component';
 import { AddSkillComponent } from './components/add/add-skill/add-skill.component';
+import { AddQualificationComponent } from './components/add/add-qualification/add-qualification.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { AddSkillComponent } from './components/add/add-skill/add-skill.componen
     QualificationUpdateComponent,
     ProjectsUpdateComponent,
     AddProjectComponent,
-    AddSkillComponent
+    AddSkillComponent,
+    AddQualificationComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { AddSkillComponent } from './components/add/add-skill/add-skill.component';
 import { SkillsUpdateComponent } from './components/update/skills-update/skills-update.component';
 import { QualificationComponent } from './components/qualification/qualification.component';
+import { AddQualificationComponent } from './components/add/add-qualification/add-qualification.component';
 import { QualificationUpdateComponent } from './components/update/qualification-update/qualification-update.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { AddProjectComponent } from './components/add/add-project/add-project.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'add-skill', component: AddSkillComponent},
   {path: 'update-skill-tab/:id', component: SkillsUpdateComponent},
   {path: 'qualification', component: QualificationComponent},
+  {path: 'add-qualification/:id', component: AddQualificationComponent},
   {path: 'update-qualification-tab/:id', component: QualificationUpdateComponent},
   {path: 'projects', component: ProjectsComponent},
   {path: 'add-project', component: AddProjectComponent},

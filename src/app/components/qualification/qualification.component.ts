@@ -51,6 +51,11 @@ export class QualificationComponent implements OnInit {
     this.qualificationService.updateQualificationTab(qualificationTab, newQualifications).subscribe(data => this.getQualificationData())
   }
 
+  addQualification(tab: string) {
+    const tabId = (tab == 'education') ? 1 : 2
+    this.router.navigate(['/add-qualification', tabId])
+  }
+
   updateQualification(tab: QualificationTab, item: Qualification) {
     this.router.navigate(['/update-qualification-tab', tab.id], {queryParams: item})
   }
