@@ -244,6 +244,7 @@ textarea {
     background-color: var(--first-color-alt);
 }
 
+.add-skill,
 .edit-skill,
 .edit-qualification,
 .edit-project,

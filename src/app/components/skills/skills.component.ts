@@ -34,6 +34,10 @@ export class SkillsComponent implements OnInit {
     this.skillsService.updateSkillTab(skillTab, newSkills).subscribe(data => this.getSkillsData())
   }
 
+  addSkill(skillTab: SkillTab) {
+    this.router.navigate(['/add-skill'], {queryParams: skillTab})
+  }
+
   updateSkill(skillTab: SkillTab, skill: Skill) {
     this.router.navigate(['/update-skill-tab', skillTab.id], {queryParams: skill})
   }

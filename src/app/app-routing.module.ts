@@ -6,6 +6,7 @@ import { HomeUpdateComponent } from './components/update/home-update/home-update
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { AboutMeUpdateComponent } from './components/update/about-me-update/about-me-update.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { AddSkillComponent } from './components/add/add-skill/add-skill.component';
 import { SkillsUpdateComponent } from './components/update/skills-update/skills-update.component';
 import { QualificationComponent } from './components/qualification/qualification.component';
 import { QualificationUpdateComponent } from './components/update/qualification-update/qualification-update.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'about-me', component: AboutMeComponent},
   {path: 'update-about-me', component: AboutMeUpdateComponent},
   {path: 'skills', component: SkillsComponent},
+  {path: 'add-skill', component: AddSkillComponent},
   {path: 'update-skill-tab/:id', component: SkillsUpdateComponent},
   {path: 'qualification', component: QualificationComponent},
   {path: 'update-qualification-tab/:id', component: QualificationUpdateComponent},

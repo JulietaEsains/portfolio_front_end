@@ -1,0 +1,39 @@
+<div class="new section">
+    <h2 class="section__title">Habilidad</h2>
+    <div class="new__container container">
+        <div class="new__form">
+            <div class="new__form__content">
+                <label class="label">Nombre:</label>
+                <input 
+                    type="text" 
+                    class="input"
+                    [(ngModel)]="skill.name"
+                >
+            </div>
+            <div class="new__form__content">
+                <label class="label">Porcentaje de dominio ({{skill.percentage}}%):</label>
+                <input 
+                    type="range"
+                    max="100"
+                    min="0"
+                    class="input range__input"
+                    [(ngModel)]="skill.percentage"
+                >
+            </div>
+            <div class="new__btns">
+                <a 
+                    routerLink="/skills"
+                    class="btn btn-flex btn-small"
+                >
+                    Volver
+                </a>
+                <a 
+                    class="btn btn-flex btn-small"
+                    (click)="addSkill()"
+                >
+                    Crear
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

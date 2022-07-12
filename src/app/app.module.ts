@@ -21,6 +21,7 @@ import { AboutMeUpdateComponent } from './components/update/about-me-update/abou
 import { QualificationUpdateComponent } from './components/update/qualification-update/qualification-update.component';
 import { ProjectsUpdateComponent } from './components/update/projects-update/projects-update.component';
 import { AddProjectComponent } from './components/add/add-project/add-project.component';
+import { AddSkillComponent } from './components/add/add-skill/add-skill.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { AddProjectComponent } from './components/add/add-project/add-project.co
     AboutMeUpdateComponent,
     QualificationUpdateComponent,
     ProjectsUpdateComponent,
-    AddProjectComponent
+    AddProjectComponent,
+    AddSkillComponent
   ],
   imports: [
     BrowserModule,
